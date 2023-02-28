@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="app.css" />
     <title>LoopLab</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#main-nav" id="home-section">
     <!-- Starting here -->
     <!-- navbar -->
     <div class="container-fluid">
@@ -395,6 +395,7 @@
     ></script>
     <script>
       $("#year").text(new Date().getFullYear());
+      $("body").scrollspy({ target: "#main-nav" });
     </script>
   </body>
 </html>
